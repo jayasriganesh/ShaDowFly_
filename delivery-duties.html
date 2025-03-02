@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowFly - Delivery Duties Assignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="delivery-duties.css">
+</head>
+<body>
+    <div class="delivery-duties">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-drone"></i>
+                Delivery Duties Assignment
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn save-btn" onclick="saveAndReturn()">
+                    <i class="fas fa-save"></i> Save & Return
+                </button>
+                <button class="nav-btn cancel-btn" onclick="window.location.href='drone-assignment.html'">
+                    <i class="fas fa-times"></i> Cancel
+                </button>
+            </div>
+        </nav>
+        <div class="content">
+            <div id="map"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="delivery-duties.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Project: Site_control_front_end
+
+1. Overall Structure:
+Project Root:
+├── public/                   - Static assets (index.html, favicon, etc.)
+├── src/
+│   ├── assets/               - Images, icons, fonts
+│   ├── components/           - Reusable UI components (Navigation, Footer, etc.)
+│   ├── pages/                - Route-specific views (Login, Index, AdminDashboard, DroneOperations, Tower, etc.)
+│   ├── services/             - API handlers, authentication, data fetching
+│   ├── utils/                - Helper functions, constants
+│   ├── styles/               - Global and component-specific styles
+│   ├── App.tsx               - Main application component and router setup
+│   └── index.tsx             - Application entry point
+├── Wireframe.md              - URL workflow and page navigation descriptions
+├── architecture              - (This file) Project architecture overview
+└── package.json              - Package configuration and dependencies
+
+2. Routing & Navigation:
+- Utilizes a router (e.g., React Router) defined in App.tsx.
+- Routes correspond to pages listed in Wireframe.md.
+
+3. Components & Services:
+- Components are modular and reusable across multiple pages.
+- Services handle business logic, API communication, and authentication.
+
+4. State Management & Utilities:
+- Global and local state managed via tools like Context API or Redux.
+- Utilities include helper functions, constants, and configuration files.
+
+5. Build & Deployment:
+- Uses a build tool (Webpack/Parcel/CRA) to bundle assets.
+- Deployed as a static site or integrated in a larger backend system.

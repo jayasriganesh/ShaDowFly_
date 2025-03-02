@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --navbar-color: #1e293b;
+    --success-color: #22c55e;
+    --warning-color: #f97316;
+    --danger-color: #ef4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.delivery-duties {
+    min-height: 100vh;
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navbar-color);
+    color: white;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn {
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+.cancel-btn {
+    background-color: var(--danger-color);
+}
+
+.cancel-btn:hover {
+    background-color: #dc2626;
+}
+
+.save-btn {
+    background-color: var(--success-color);
+}
+
+.save-btn:hover {
+    background-color: #16a34a;
+}
+
+.content {
+    flex: 1;
+    position: relative;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #e5e7eb;
+}
+
+.warehouse-marker {
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.warehouse-marker img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.ddt-marker {
+    background-color: #ff8c00;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.6);
+    z-index: 2;
+}
+
+
+.connection-line {
+    stroke: white !important;
+    stroke-width: 3;
+    stroke-opacity: 0.8;
+    fill: none;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9));
+    z-index: 1;
+}
