@@ -139,6 +139,7 @@ CSV import/export
 
 📦 Project Structure
 
+<prev>
 drone-hub/
 ├── assets/
 │   ├── images/
@@ -175,7 +176,7 @@ drone-hub/
 └── lib/
     ├── cesium/
     └── leaflet/
-
+</prev>
 
 ---
 
